@@ -1,56 +1,61 @@
-# Welcome to your Expo app 👋
+# Currículo e Portfólio — Nina Lira
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Aplicativo de currículo e portfólio desenvolvido para a disciplina de Programação Web-Mobile do curso de Ciência da Computação da Universidade Católica de Pernambuco.
 
-## Get started
+O projeto adapta para dispositivos móveis um portfólio originalmente criado em Next.js. O objetivo da migração foi apresentar o currículo, os projetos e o Jogo da Forca em uma interface nativa construída com React Native e Expo.
 
-1. Install dependencies
+## Tecnologias
 
-   ```bash
-   npm install
-   ```
+- React e React Native
+- Expo SDK 58 e Expo Router
+- TypeScript
+- Expo Symbols, para ícones
+- React Native Safe Area Context, para respeitar as áreas seguras da tela
 
-2. Start the app
+## Funcionalidades
 
-   ```bash
-   npx expo start
-   ```
+- Apresentação pessoal, habilidades e trajetória acadêmica.
+- Telas de experiência acadêmica e profissional e informações sobre o aplicativo.
+- Portfólio com cinco projetos.
+- Jogo da Forca com palavras da área de tecnologia.
+- Canais de contato: GitHub, LinkedIn e e-mail.
 
-In the output, you'll find options to open the app in a
+## Organização das pastas
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **src/app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
+```text
+src/
+  app/          telas e navegação com Expo Router
+  components/   componentes reutilizáveis
+  constants/    cores e outras constantes
+  data/         dados do currículo e dos projetos
+assets/         imagens e ícones do aplicativo
 ```
 
-This command will move the starter code to the **example** directory and create a blank **src/app** directory where you can start developing.
+## Instalação e execução
 
-### Other setup steps
+É necessário ter o Node.js e o npm instalados. Na pasta do projeto, execute:
 
-- To set up ESLint for linting, run `npx expo lint`, or follow our guide on ["Using ESLint and Prettier"](https://docs.expo.dev/guides/using-eslint/)
-- If you'd like to set up unit testing, follow our guide on ["Unit Testing with Jest"](https://docs.expo.dev/develop/unit-testing/)
-- Learn more about the TypeScript setup in this template in our guide on ["Using TypeScript"](https://docs.expo.dev/guides/typescript/)
+```bash
+npm install
+npx expo start
+```
 
-## Learn more
+O terminal exibirá um QR Code e as opções de execução. Para verificar os tipos do TypeScript:
 
-To learn more about developing your project with Expo, look at the following resources:
+```bash
+npx tsc --noEmit
+```
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+## Testar no Expo Go
 
-## Join the community
+Instale o Expo Go no celular, inicie o projeto com `npx expo start` e abra o QR Code exibido no terminal. No iPhone, use a câmera para ler o código; no Android, use o leitor do Expo Go.
 
-Join our community of developers creating universal apps.
+O computador e o celular geralmente devem estar na mesma rede. Se houver dificuldade de conexão, inicie o projeto em modo Tunnel:
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+```bash
+npx expo start --tunnel
+```
+
+## Publicação
+
+Link da publicação no Expo: a adicionar posteriormente.

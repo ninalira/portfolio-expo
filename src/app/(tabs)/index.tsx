@@ -1,0 +1,10 @@
+import { Link } from 'expo-router';
+import { StyleSheet, Text, View } from 'react-native';
+import { ScreenContainer } from '@/components/ScreenContainer';
+import { colors } from '@/constants/colors';
+export default function Home() {
+  return <ScreenContainer centered><View style={styles.hero}><Text style={styles.eyebrow}>CURRÍCULO & PORTFÓLIO</Text><Text accessibilityRole="header" style={styles.name}>Nina Lira</Text><Text style={styles.role}>Estudante de Ciência da Computação</Text><Text style={styles.university}>Universidade Católica de Pernambuco</Text><Text style={styles.intro}>Desenvolvedora em formação, com interesse em data science e engenharia de requisitos.</Text></View>
+    <View style={styles.section}><Text accessibilityRole="header" style={styles.heading}>Conheça meu trabalho</Text><View style={styles.actions}><Link href="/projetos" asChild><Text accessibilityRole="link" style={styles.primary}>Ver projetos →</Text></Link><Link href="/sobre" asChild><Text accessibilityRole="link" style={styles.secondary}>Sobre mim →</Text></Link></View></View>
+  </ScreenContainer>;
+}
+const styles = StyleSheet.create({ hero: { backgroundColor: colors.lightYellow, borderRadius: 24, padding: 26, gap: 12 }, eyebrow: { color: colors.blue, fontSize: 12, fontWeight: '700', letterSpacing: 1.3 }, name: { color: colors.blue, fontSize: 38, fontWeight: '800', marginTop: 14 }, role: { color: colors.blue, fontSize: 18, fontWeight: '700' }, university: { color: colors.text, fontSize: 15 }, intro: { color: colors.text, fontSize: 16, lineHeight: 24, marginTop: 12 }, section: { gap: 14, marginTop: 6 }, heading: { color: colors.blue, fontSize: 20, fontWeight: '700' }, actions: { gap: 10 }, primary: { backgroundColor: colors.blue, color: colors.white, borderRadius: 16, overflow: 'hidden', padding: 18, fontSize: 16, fontWeight: '700', minHeight: 54 }, secondary: { backgroundColor: colors.lightBlue, color: colors.blue, borderRadius: 16, overflow: 'hidden', padding: 18, fontSize: 16, fontWeight: '700', minHeight: 54 } });

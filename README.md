@@ -2,8 +2,6 @@
 
 Aplicativo de currículo e portfólio desenvolvido para a disciplina de Programação Web-Mobile do curso de Ciência da Computação da Universidade Católica de Pernambuco.
 
-O projeto adapta para dispositivos móveis um portfólio originalmente criado em Next.js. O objetivo da migração foi apresentar o currículo, os projetos e o Jogo da Forca em uma interface nativa construída com React Native e Expo.
-
 ## Tecnologias
 
 - React e React Native
@@ -31,31 +29,3 @@ src/
 assets/         imagens e ícones do aplicativo
 ```
 
-## Instalação e execução
-
-É necessário ter o Node.js e o npm instalados. Na pasta do projeto, execute:
-
-```bash
-npm install
-npx expo start
-```
-
-O terminal exibirá um QR Code e as opções de execução. Para verificar os tipos do TypeScript:
-
-```bash
-npx tsc --noEmit
-```
-
-## Testar no Expo Go
-
-Instale o Expo Go no celular, inicie o projeto com `npx expo start` e abra o QR Code exibido no terminal. No iPhone, use a câmera para ler o código; no Android, use o leitor do Expo Go.
-
-O computador e o celular geralmente devem estar na mesma rede. Se houver dificuldade de conexão, inicie o projeto em modo Tunnel:
-
-```bash
-npx expo start --tunnel
-```
-
-## Publicação
-
-Link da publicação no Expo: a adicionar posteriormente.
